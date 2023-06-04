@@ -1,0 +1,119 @@
+# Uzbek translations for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-06-04 22:56+0500\n"
+"PO-Revision-Date: 2023-06-04 22:56+0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uz\n"
+"Language-Team: uz <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: tgbot/handlers/user.py:26
+msgid "Sertifikatni yuklab olish uchun quyidagi so'rovnomani to'ldiring."
+msgstr ""
+"Сертификатни юклаб олиш учун қуйидаги сўровномани тўлдиринг. "
+
+#: tgbot/handlers/user.py:27
+msgid ""
+"Universitet professor-o'qituvchisini baholang\n"
+"(Suv tejovchi texnologiyalarning afzalliklari va ularni samaradorligi)"
+msgstr ""
+"Университет профессор-ўқитувчисини баҳоланг\n"
+"(Сув тежовчи технологияларнинг афзалликлари ва уларни самарадорлиги)"
+
+#: tgbot/handlers/user.py:35
+msgid ""
+"Turk mutaxassisini baholang\n"
+"(Zamonaviy sug'orish tizimining ahamiyati va suvdan foydalanish "
+"madaniyati)"
+msgstr ""
+"Турк мутахассисини баҳоланг\n"
+"(Замонавий суғориш тизимининг аҳамияти ва сувдан фойдаланиш "
+"маданияти)"
+
+#: tgbot/handlers/user.py:44
+msgid ""
+"Bank mutaxassisini baholang\n"
+"(Iqtisodiy va huquqiy savodxonlik: subsidiya, kafilliklar, soliq "
+"imtiyozlari va bank kreditlari)"
+msgstr ""
+"Банк мутахассисини баҳоланг\n"
+"(Иқтисодий ва ҳуқуқий саводхонлик:  субсидия,  кафилликлар,  солиқ "
+"имтиёзлари ва банк кредитлари)"
+
+#: tgbot/handlers/user.py:53
+msgid ""
+"Suv xo'jaligi vazirligi mutaxassisini baholang\n"
+"(Iqtisodiy va huquqiy savodxonlik: subsidiya, kafilliklar, soliq "
+"imtiyozlari va bank kreditlari)"
+msgstr ""
+"Сув хўжалиги вазирлиги мутахассисини баҳоланг\n"
+"(Иқтисодий ва ҳуқуқий саводхонлик:  субсидия,  кафилликлар,  солиқ "
+"имтиёзлари ва банк кредитлари)"
+
+#: tgbot/handlers/user.py:62
+msgid ""
+"O'quv kursi tashkiliy jarayonlarini baholang\n"
+"(o'quv materiallari, esdalik sovg'alar, tushlik va boshqalar)"
+msgstr ""
+"Ўқув курси ташкилий жараёнларини баҳоланг\n"
+"(ўқув материаллари,  эсдалик совғалар,  тушлик ва бошқалар)"
+
+#: tgbot/handlers/user.py:71
+msgid ""
+"O'quv kursi haqida fikrlaringiz bo'lsa, shu yerda yozib qoldiring "
+"(majburiy emas)"
+msgstr ""
+"Ўқув курси ҳақида фикрларингиз бўлса,  шу йерда ёзиб қолдиринг "
+"(мажбурий эмас)"
+
+#: tgbot/handlers/user.py:80 tgbot/handlers/user.py:88
+msgid ""
+"So'rovnomada qatnashganingiz uchun minnatdormiz!\n"
+"Sertifikatni yuklab olish uchun id raqamingizni kiriting"
+msgstr ""
+"Сўровномада қатнашганингиз учун миннатдормиз! \n"
+"Сертификатни юклаб олиш учун ид рақамингизни киритинг"
+
+#: tgbot/handlers/user.py:103
+msgid "⏳ Yuklanmoqda, kutib turing..."
+msgstr "⏳ Юкланмоқда,  кутиб туринг. . . "
+
+#: tgbot/handlers/user.py:121
+msgid ""
+"Boshqa sertifikat yuklash uchun /start komandasini yozing va so'rovnomani"
+" qayta to'ldiring"
+msgstr ""
+"Бошқа сертификат юклаш учун /старт командасини ёзинг ва сўровномани"
+" қайта тўлдиринг"
+
+#: tgbot/handlers/user.py:129
+msgid ""
+"❔ ID notog'ri kiritildi yoki kurs hali yakunlanmagan\n"
+"⏳ Kurs yakunlanganidan so‘ng sertifikatingizni yuklab olishingiz mumkin"
+msgstr ""
+"❔ ID нотоғри киритилди ёки курс ҳали якунланмаган\n"
+"⏳ Курс якунланганидан сўнг сертификатингизни юклаб олишингиз мумкин"
+
+#: tgbot/handlers/user.py:137
+msgid ""
+"ID raqami faqat sonlardan iborat bo'lishi kerak! Iltimos, tekshirib qayta"
+" kiritng."
+msgstr ""
+"ID рақами фақат сонлардан иборат бўлиши керак!  Илтимос,  текшириб қайта"
+" киритнг. "
+
+#: tgbot/keyboards/inline.py:21
+msgid "Davom etish"
+msgstr "Давом этиш"
+

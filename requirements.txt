@@ -3,6 +3,7 @@ environs~=9.0
 redis
 betterlogging
 peewee
+aiogram[i18n]
 # # For enabling api:
 # backoff
 # ujson
