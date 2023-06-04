@@ -23,8 +23,8 @@ async def start(message: Message, state: FSMContext):
 @user_router.callback_query(Factories.Language.filter())
 async def user_start(callback: CallbackQuery, callback_data: Factories.Language, state: FSMContext):
     data = await state.get_data()
-    await callback.message.edit_text(_("Sertifikatni yuklab olish uchun quyidagi so'rovnomani to'ldiring.", locale=data['language']))
-    await callback.message.answer(_('Universitet professor-o\'qituvchisini baholang\n(Suv tejovchi texnologiyalarning afzalliklari va ularni samaradorligi)', locale=data['language']), reply_markup=await score_keyboard(1))
+    await callback.message.edit_text(_("Sertifikatni yuklab olish uchun quyidagi so'rovnomani to'ldiring.", locale=callback_data.language))
+    await callback.message.answer(_('Universitet professor-o\'qituvchisini baholang\n(Suv tejovchi texnologiyalarning afzalliklari va ularni samaradorligi)', locale=callback_data.language), reply_markup=await score_keyboard(1))
     await state.set_state(states.UserStates.first)
     await state.update_data(language=callback_data.language)
 
@@ -109,15 +109,26 @@ async def seven(message: Message, state: FSMContext):
                     filename="certificate-{cert_id}.pdf".format(cert_id=message.text),
                 )
             )
-            Score.create(
-                first=data['first'],
-                second=data['second'],
-                third=data['third'],
-                four=data['four'],
-                five=data['five'],
-                six=data['six'],
-                cert_id=message.text,
-            )
+            try:
+                record: Score = Score.get(cert_id=message.text)
+                record.first=data['first']
+                record.second=data['second']
+                record.third=data['third']
+                record.four=data['four']
+                record.five=data['five']
+                record.six=data['six']
+                record.cert_id=message.text
+                record.save()
+            except:
+                Score.create(
+                    first=data['first'],
+                    second=data['second'],
+                    third=data['third'],
+                    four=data['four'],
+                    five=data['five'],
+                    six=data['six'],
+                    cert_id=message.text,
+                )
             await message.answer(_('Boshqa sertifikat yuklash uchun /start komandasini yozing va so\'rovnomani qayta to\'ldiring', locale=data['language']))
 
             await state.clear()

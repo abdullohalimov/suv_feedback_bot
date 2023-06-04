@@ -14,4 +14,8 @@ class Score(Model):
     class Meta:
         database = db # This model uses the "people.db" database.
 
-Score.create_table()
+# Score.create_table()
+
+# record: Score = Score.get(cert_id='00053')
+# if record:
+#     record.update
