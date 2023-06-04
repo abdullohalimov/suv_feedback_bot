@@ -1,19 +1,28 @@
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiogram.types.inline_keyboard_button import InlineKeyboardButton
 from aiogram.filters.callback_data import CallbackData
+from tgbot.misc.states import i18nn as _
 
 async def score_keyboard(step):
     keyboard = InlineKeyboardBuilder()
-
-    keyboard.add(InlineKeyboardButton(text='1', callback_data=Factories.Score(id=1, step=step).pack()))
-    keyboard.add(InlineKeyboardButton(text='2', callback_data=Factories.Score(id=2, step=step).pack()))
-    keyboard.add(InlineKeyboardButton(text='3', callback_data=Factories.Score(id=3, step=step).pack()))
-    keyboard.add(InlineKeyboardButton(text='4', callback_data=Factories.Score(id=4, step=step).pack()))
-    keyboard.add(InlineKeyboardButton(text='5', callback_data=Factories.Score(id=5, step=step).pack()))
+    step = str(step)
+    keyboard.add(InlineKeyboardButton(text='1', callback_data=Factories.Score(id='1', step=step).pack()))
+    keyboard.add(InlineKeyboardButton(text='2', callback_data=Factories.Score(id='2', step=step).pack()))
+    keyboard.add(InlineKeyboardButton(text='3', callback_data=Factories.Score(id='3', step=step).pack()))
+    keyboard.add(InlineKeyboardButton(text='4', callback_data=Factories.Score(id='4', step=step).pack()))
+    keyboard.add(InlineKeyboardButton(text='5', callback_data=Factories.Score(id='5', step=step).pack()))
 
     return keyboard.as_markup()
 
+async def continue_step(lang):
+    keyboard = InlineKeyboardBuilder()
 
+    keyboard.add(InlineKeyboardButton(
+            text=_("Davom etish", locale=lang),
+            callback_data="continue",
+        ))
+
+    return keyboard.as_markup()
 
 def language_keyboard():
     keyboard = InlineKeyboardBuilder()

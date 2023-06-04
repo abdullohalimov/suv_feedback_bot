@@ -13,3 +13,5 @@ class Score(Model):
 
     class Meta:
         database = db # This model uses the "people.db" database.
+
+Score.create_table()
